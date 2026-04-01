@@ -44,12 +44,17 @@ const posts = [
 
 //index
 router.get('/', (req, res) => {
-  res.send('Benvenuto alla bacheca dei post!');
+  res.send('Lista dei post');
 });
 
 //show
 router.get('/:id', (req, res) => {
+    res.send(`Dettagli del post con id ${req.params.id}`);
+});
 
+// store
+router.post('/', (req, res) => {
+    res.send('Creazione di un nuovo post');
 });
 
 module.exports = router;

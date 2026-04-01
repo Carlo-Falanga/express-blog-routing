@@ -22,7 +22,5 @@ app.get("/", (req, res) => {
 
 
 // Posts CRUD routes
-
-// Use posts router
+// Use posts router for /posts routes
 app.use("/posts", postsRouter);
-
