@@ -57,4 +57,19 @@ router.post('/', (req, res) => {
     res.send('Creazione di un nuovo post');
 });
 
+// update
+router.put('/:id', (req, res) => {
+    res.send(`Aggiornamento del post con id ${req.params.id}`);
+});
+
+// modify
+router.patch('/:id', (req, res) => {
+    res.send(`Modifica del post con id ${req.params.id}`);
+});
+
+// destroy
+router.delete('/:id', (req, res) => {
+    res.send(`Cancellazione del post con id ${req.params.id}`);
+});
+
 module.exports = router;
