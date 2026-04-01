@@ -2,10 +2,10 @@
   "name": "express-blog-intro",
   "version": "1.0.0",
   "description": "Esempio minimale di blog con Express",
-  "main": "src/index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "keywords": [],
   "author": "",
